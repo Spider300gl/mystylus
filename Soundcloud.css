@@ -1,0 +1,66 @@
+@-moz-document domain("soundcloud.com") {
+    /* Play Button */
+    .sc-button-next,
+    .sc-button-pause,
+    .sc-button-play,
+    .sc-button-prev,
+    .sc-button.sc-button-blocked,
+    .sc-button.sc-button-play.sc-button- disabled:disabled,
+    .sc-button.sc-button-play:disabled,
+    .sc-button.sc-button-play:disabled:hover {
+        background-color: rgb(137, 180, 250);
+    }
+    /* Context Texts (All, Popular Tracks...) */
+    .sc-classic .g-tabs-link.active {
+        border-color: rgb(137, 180, 250);
+        color: rgb(137, 180, 250);
+    }
+    /* Active Play Button */
+    .sc-button-next.sc-button-focus,
+    .sc-button-next:focus,
+    .sc-button-next:hover,
+    .sc-button-pause.sc-button-focus,
+    .sc-button-pause:focus,
+    .sc-button-pause:hover,
+    .sc-button-play.sc-button-focus,
+    .sc-button-play:focus,
+    .sc-button-play:hover,
+    .sc-button-prev.sc-button-focus,
+    .sc-button-prev:focus,
+    .sc-button-prev:hover {
+        background-color: rgb(105, 150, 209);
+    }
+    /* Progress Bar Circle */
+    .sc-classic .playbackTimeline__progressHandle {
+        border-color: rgb(137, 180, 250);
+        background-color: rgb(137, 180, 250);
+    }
+    /* Progress Bar */
+    .sc-classic .playbackTimeline__progressBar {
+        background-color: rgb(137, 180, 250);
+    }
+    /* Progress Bar Time */
+    .sc-classic .playbackTimeline__timePassed {
+        color: rgb(137, 180, 250);
+    }
+    /* Search Results Menu */
+    .sc-classic .g-nav-item.active > .g-nav-link {
+        background-color: rgb(137, 180, 250);
+        text-shadow: rgb(105, 150, 209) 0px 1px 0px;
+    }
+    /*Biggest Play Button */
+    .sc-classic .playButton.m-stretch,
+    .sc-classic .playButton.m-stretch:active,
+    .sc-classic .playButton.m-stretch:focus {
+        border-color: rgb(105, 150, 209);
+        background-color: rgb(137, 180, 250);
+    }
+    .sc-classic .playButton.m-stretch:hover {
+        border-color: rgb(105, 150, 209);
+        background-color: rgb(105, 150, 209);
+    }
+    
+    /* Wave Color */
+    /*.waveform__layer, .waveform__layer .sceneLayer {filter: grayscale(35%);}*/
+    .sceneLayer,.heroPlayButton, .waveformCommentsNode  {filter: hue-rotate(195deg) saturate(40%) brightness(100%);}
+    }
