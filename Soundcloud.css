@@ -1,4 +1,8 @@
 @-moz-document domain("soundcloud.com") {
+    /* 
+    #333 = #cdd6f4
+    #999 = #a6adc8
+    */
     /* Play Button */
     .sc-button-next,
     .sc-button-pause,
@@ -59,8 +63,71 @@
         border-color: rgb(105, 150, 209);
         background-color: rgb(105, 150, 209);
     }
-    
     /* Wave Color */
+    /* For the waveform colour change to work, remove the line below */
     /*.waveform__layer, .waveform__layer .sceneLayer {filter: grayscale(35%);}*/
-    .sceneLayer,.heroPlayButton, .waveformCommentsNode  {filter: hue-rotate(195deg) saturate(40%) brightness(100%);}
+    .sceneLayer,
+    .heroPlayButton,
+    .waveformCommentsNode {
+        filter: hue-rotate(195deg) saturate(40%) brightness(100%);
+    }
+    
+    .sc-button-cta,
+    .sc-button-cta:focus,
+    .sc-button-cta:hover,
+    .sc-button-cta:visited,
+    .sc-button.sc-button-white:focus,
+    .sc-button.sc-button-white:hover {
+        background-color: rgb(105, 150, 209);
+        border-color: rgb(105, 150, 209);
+        color: rgb(205, 214, 244);
+    }
+    /* Following, Repost, Like Active Buttons */
+    .sc-button-active,
+    .sc-button-selected {
+        color: rgb(105, 150, 209);
+    }
+    /* Text Song Title */
+    a.sc-link-dark,
+    a:hover {
+        color: #cdd6f4;
+    }
+    /* Text Song Subtitle */
+    a.sc-link-light,
+    .sc-text-light {
+        color: #a6adc8;
+    }
+    /* Comment Section Text */
+    body {
+        color: #cdd6f4;
+    }
+    /* Song Tag Text */
+    .sc-tag,
+    .sc-tag:visited {
+        color: #cdd6f4;
+    }
+    /* Very LightText */
+    .sc-text-verylight {
+        color: rgb(137, 180, 250);
+    }
+    /* Link Text */
+    a,
+    a:visited {
+        color: #89b4fa;
+    }
+    /* Reply Text */
+    .sc-button,
+    .sc-button:hover {
+        color: #cdd6f4;
+    }
+    /* Song Cpyright Text */
+    .sc-type-light {
+        color: #a6adc8;
+    }
+    /* Mini-Stats Text */
+    a.sc-ministats,
+    sc-ministats,
+    sc-ministats:hover {
+        color: #a6adc8;
+    }
     }
