@@ -13,6 +13,7 @@ This repo will only be focused in web design, if you want to see my other person
 - [Twitch](https://github.com/catppuccin/twitch)
 
 ## Original Ones
-- Soundclud(WIP)
+- [Soundclud(WIP)](https://github.com/Spider300gl/mystylus/blob/main/Soundcloud.css)
+- [Twitter(WIP)](https://github.com/Spider300gl/mystylus/blob/main/Twitter.css)
 - Nightab Configuration
 
