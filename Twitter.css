@@ -1,0 +1,46 @@
+@-moz-document url-prefix("https://twitter.com") {
+    /* Twitter Catppuccin Mocha Blue */
+    /* Page Main Background */
+    :root {
+        --base: #1e1e2e;
+        --mantle: #181825;
+        --accent: #89b4fa;
+    }
+    
+    main,
+    header {
+        background-color: var(--base);
+    }
+    /* I don't want twitter blue, thank you very much */
+    [aria-label="Twitter Blue"] {
+        display: none;
+    }
+    /* Tweets Style */
+    .r-kemksi {
+        background-color: var(--mantle);
+    }
+    .r-5zmot {
+        background-color: rgba(30, 30, 46, 1);
+    }
+    /* Buttons */
+    .r-l5o3uw,
+    .r-1vtznih {
+        background-color: var(--accent);
+    }
+    /* Links or/and clickable */
+    .r-1cvl2hr {
+        color: var(--accent);
+    }
+    /* idk the boxes on the left */
+    .r-g2wdr4 {
+        background-color: var(--mantle);
+    }
+    /* Search Box */
+    .r-42olwf {
+        border-color: var(--mantle);
+    }
+    /* Epic border colors */
+    .r-vhj8yc {
+        border-color: var(--accent)
+    }
+    }
