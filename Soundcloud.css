@@ -1,8 +1,16 @@
 @-moz-document domain("soundcloud.com") {
     /* 
-    #333 = #cdd6f4
-    #999 = #a6adc8
+    #333 = var(--text)
+    #999 = var(--darker-text)
     */
+    :root {
+        --base: #1e1e2e;
+        --mantle: #181825;
+        --accent: #89b4fa;
+        --darker-accent: #6388f8;
+        --text: #cdd6f4;
+        --darker-text: #a6adc8;
+    }
     /* Play Button */
     .sc-button-next,
     .sc-button-pause,
@@ -12,12 +20,12 @@
     .sc-button.sc-button-play.sc-button- disabled:disabled,
     .sc-button.sc-button-play:disabled,
     .sc-button.sc-button-play:disabled:hover {
-        background-color: rgb(137, 180, 250);
+        background-color: var(--accent);
     }
     /* Context Texts (All, Popular Tracks...) */
     .sc-classic .g-tabs-link.active {
-        border-color: rgb(137, 180, 250);
-        color: rgb(137, 180, 250);
+        border-color: var(--accent);
+        color: var(--accent);
     }
     /* Active Play Button */
     .sc-button-next.sc-button-focus,
@@ -32,36 +40,36 @@
     .sc-button-prev.sc-button-focus,
     .sc-button-prev:focus,
     .sc-button-prev:hover {
-        background-color: rgb(105, 150, 209);
+        background-color: var(--darker-accent);
     }
     /* Progress Bar Circle */
     .sc-classic .playbackTimeline__progressHandle {
-        border-color: rgb(137, 180, 250);
-        background-color: rgb(137, 180, 250);
+        border-color: var(--accent);
+        background-color: var(--accent);
     }
     /* Progress Bar */
     .sc-classic .playbackTimeline__progressBar {
-        background-color: rgb(137, 180, 250);
+        background-color: var(--accent);
     }
     /* Progress Bar Time */
     .sc-classic .playbackTimeline__timePassed {
-        color: rgb(137, 180, 250);
+        color: var(--accent);
     }
     /* Search Results Menu */
     .sc-classic .g-nav-item.active > .g-nav-link {
-        background-color: rgb(137, 180, 250);
-        text-shadow: rgb(105, 150, 209) 0px 1px 0px;
+        background-color: var(--accent);
+        text-shadow: var(--darker-accent) 0px 1px 0px;
     }
     /*Biggest Play Button */
     .sc-classic .playButton.m-stretch,
     .sc-classic .playButton.m-stretch:active,
     .sc-classic .playButton.m-stretch:focus {
-        border-color: rgb(105, 150, 209);
-        background-color: rgb(137, 180, 250);
+        border-color: var(--darker-accent);
+        background-color: var(--accent);
     }
     .sc-classic .playButton.m-stretch:hover {
-        border-color: rgb(105, 150, 209);
-        background-color: rgb(105, 150, 209);
+        border-color: var(--darker-accent);
+        background-color: var(--darker-accent);
     }
     /* Wave Color */
     /* For the waveform colour change to work, remove the line below */
@@ -78,56 +86,56 @@
     .sc-button-cta:visited,
     .sc-button.sc-button-white:focus,
     .sc-button.sc-button-white:hover {
-        background-color: rgb(105, 150, 209);
-        border-color: rgb(105, 150, 209);
-        color: rgb(205, 214, 244);
+        background-color: var(--darker-accent);
+        border-color: var(--darker-accent);
+        color: var(--text);
     }
     /* Following, Repost, Like Active Buttons */
     .sc-button-active,
     .sc-button-selected {
-        color: rgb(105, 150, 209);
+        color: var(--darker-accent);
     }
     /* Text Song Title */
     a.sc-link-dark,
     a:hover {
-        color: #cdd6f4;
+        color: var(--text);
     }
     /* Text Song Subtitle */
     a.sc-link-light,
     .sc-text-light {
-        color: #a6adc8;
+        color: var(--darker-text);
     }
     /* Comment Section Text */
     body {
-        color: #cdd6f4;
+        color: var(--text);
     }
     /* Song Tag Text */
     .sc-tag,
     .sc-tag:visited {
-        color: #cdd6f4;
+        color: var(--text);
     }
     /* Very LightText */
     .sc-text-verylight {
-        color: rgb(137, 180, 250);
+        color: var(--accent);
     }
     /* Link Text */
     a,
     a:visited {
-        color: #89b4fa;
+        color: var(--accent);
     }
     /* Reply Text */
     .sc-button,
     .sc-button:hover {
-        color: #cdd6f4;
+        color: var(--text);
     }
     /* Song Cpyright Text */
     .sc-type-light {
-        color: #a6adc8;
+        color: var(--darker-text);
     }
     /* Mini-Stats Text */
     a.sc-ministats,
     sc-ministats,
     sc-ministats:hover {
-        color: #a6adc8;
+        color: var(--darker-text);
     }
     }
