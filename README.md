@@ -11,6 +11,7 @@ This repo will only be focused in web design, if you want to see my other person
 - [Discord](https://github.com/catppuccin/discord)
 - [Reddit](https://github.com/catppuccin/userstyles/tree/main/styles/reddit)
 - [Twitch](https://github.com/catppuccin/userstyles/tree/main/styles/twitch)
+- [Stylus](https://github.com/catppuccin/userstyles/tree/main/styles/stylus)
 
 ## Original Ones
 - [Soundclud(WIP)](https://github.com/Spider300gl/mystylus/blob/main/Soundcloud.css)
