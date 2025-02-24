@@ -6,20 +6,46 @@
     --base: #1e1e2e;
     --mantle: #181825;
     --accent: #eba0ac;
+    --lighter-accent: #eeb9c0;
     --darker-accent: #f38ba8;
     --text:  #cdd6f4;
     --darker-text: #a6adc8;
+    --border-color: #45475a;
+}
+/*App*/
+#app {
+    background-color: var(--base); 
 }
 /*Header*/
+.sc-classic .header__button.header__creatorUpsell, 
+.sc-classic .header__button.header__fanUpsell, 
+.sc-classic .header__link.header__creatorUpsell, 
+.sc-classic .header__link.header__fanUpsell {
+    color: var(--accent);
+}
+.sc-classic .header__button.header__creatorUpsell:hover, 
+.sc-classic .header__button.header__fanUpsell:hover, 
+.sc-classic .header__link.header__creatorUpsell:hover, 
+.sc-classic .header__link.header__fanUpsell:hover {
+    color: var(--lighter-accent);
+}
 .sc-classic .header {
     background-color: var(--mantle);
+}
+.sc-classic .header__navMenu > li > a {
+  border-right: 1px solid var(--border-color);
 }
 /* Page Background Color */
 .l-container.l-content, .sc-classic .l-container.l-content {
   background-color: var(--base) ;
 }
 /*Page Side Columns*/
-
+.sc-border-light-bottom {
+    border-bottom: 1px solid var(--border-color);
+}
+.sc-border-light-right {
+  border-right: 1px solid var(--border-color);
+}
 /* Play Button */
 .sc-button-next,
 .sc-button-pause,
@@ -30,6 +56,11 @@
 .sc-button.sc-button-play:disabled,
 .sc-button.sc-button-play:disabled:hover {
     background-color: var(--accent);
+}
+/*Main Page*/
+.sc-classic .mixedSelectionModule {
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 34px;
 }
 /* Context Texts (All, Popular Tracks...) */
 .sc-classic .g-tabs-link.active {
