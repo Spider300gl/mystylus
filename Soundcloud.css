@@ -1,141 +1,149 @@
-@-moz-document domain("soundcloud.com") {
-    /* 
-    #333 = var(--text)
-    #999 = var(--darker-text)
-    */
-    :root {
-        --base: #1e1e2e;
-        --mantle: #181825;
-        --accent: #89b4fa;
-        --darker-accent: #6388f8;
-        --text: #cdd6f4;
-        --darker-text: #a6adc8;
-    }
-    /* Play Button */
-    .sc-button-next,
-    .sc-button-pause,
-    .sc-button-play,
-    .sc-button-prev,
-    .sc-button.sc-button-blocked,
-    .sc-button.sc-button-play.sc-button- disabled:disabled,
-    .sc-button.sc-button-play:disabled,
-    .sc-button.sc-button-play:disabled:hover {
-        background-color: var(--accent);
-    }
-    /* Context Texts (All, Popular Tracks...) */
-    .sc-classic .g-tabs-link.active {
-        border-color: var(--accent);
-        color: var(--accent);
-    }
-    /* Active Play Button */
-    .sc-button-next.sc-button-focus,
-    .sc-button-next:focus,
-    .sc-button-next:hover,
-    .sc-button-pause.sc-button-focus,
-    .sc-button-pause:focus,
-    .sc-button-pause:hover,
-    .sc-button-play.sc-button-focus,
-    .sc-button-play:focus,
-    .sc-button-play:hover,
-    .sc-button-prev.sc-button-focus,
-    .sc-button-prev:focus,
-    .sc-button-prev:hover {
-        background-color: var(--darker-accent);
-    }
-    /* Progress Bar Circle */
-    .sc-classic .playbackTimeline__progressHandle {
-        border-color: var(--accent);
-        background-color: var(--accent);
-    }
-    /* Progress Bar */
-    .sc-classic .playbackTimeline__progressBar {
-        background-color: var(--accent);
-    }
-    /* Progress Bar Time */
-    .sc-classic .playbackTimeline__timePassed {
-        color: var(--accent);
-    }
-    /* Search Results Menu */
-    .sc-classic .g-nav-item.active > .g-nav-link {
-        background-color: var(--accent);
-        text-shadow: var(--darker-accent) 0px 1px 0px;
-    }
-    /*Biggest Play Button */
-    .sc-classic .playButton.m-stretch,
-    .sc-classic .playButton.m-stretch:active,
-    .sc-classic .playButton.m-stretch:focus {
-        border-color: var(--darker-accent);
-        background-color: var(--accent);
-    }
-    .sc-classic .playButton.m-stretch:hover {
-        border-color: var(--darker-accent);
-        background-color: var(--darker-accent);
-    }
-    /* Wave Color */
-    /* For the waveform colour change to work, remove the line below */
-    /*.waveform__layer, .waveform__layer .sceneLayer {filter: grayscale(35%);}*/
-    .sceneLayer,
-    .heroPlayButton,
-    .waveformCommentsNode {
-        filter: hue-rotate(195deg) saturate(40%) brightness(100%);
-    }
-    
-    .sc-button-cta,
-    .sc-button-cta:focus,
-    .sc-button-cta:hover,
-    .sc-button-cta:visited,
-    .sc-button.sc-button-white:focus,
-    .sc-button.sc-button-white:hover {
-        background-color: var(--darker-accent);
-        border-color: var(--darker-accent);
-        color: var(--text);
-    }
-    /* Following, Repost, Like Active Buttons */
-    .sc-button-active,
-    .sc-button-selected {
-        color: var(--darker-accent);
-    }
-    /* Text Song Title */
-    a.sc-link-dark,
-    a:hover {
-        color: var(--text);
-    }
-    /* Text Song Subtitle */
-    a.sc-link-light,
-    .sc-text-light {
-        color: var(--darker-text);
-    }
-    /* Comment Section Text */
-    body {
-        color: var(--text);
-    }
-    /* Song Tag Text */
-    .sc-tag,
-    .sc-tag:visited {
-        color: var(--text);
-    }
-    /* Very LightText */
-    .sc-text-verylight {
-        color: var(--accent);
-    }
-    /* Link Text */
-    a,
-    a:visited {
-        color: var(--accent);
-    }
-    /* Reply Text */
-    .sc-button,
-    .sc-button:hover {
-        color: var(--text);
-    }
-    /* Song Cpyright Text */
-    .sc-type-light {
-        color: var(--darker-text);
-    }
-    /* Mini-Stats Text */
-    a.sc-ministats,
-    sc-ministats,
-    sc-ministats:hover {
-        color: var(--darker-text);
-    }
-    }
+/* 
+#333 = var(--text)
+#999 = var(--darker-text)
+*/
+:root {
+    --base: #1e1e2e;
+    --mantle: #181825;
+    --accent: #eba0ac;
+    --darker-accent: #f38ba8;
+    --text:  #cdd6f4;
+    --darker-text: #a6adc8;
+}
+/*Header*/
+.sc-classic .header {
+    background-color: var(--mantle);
+}
+/* Page Background Color */
+.l-container.l-content, .sc-classic .l-container.l-content {
+  background-color: var(--base) ;
+}
+/*Page Side Columns*/
+
+/* Play Button */
+.sc-button-next,
+.sc-button-pause,
+.sc-button-play,
+.sc-button-prev,
+.sc-button.sc-button-blocked,
+.sc-button.sc-button-play.sc-button- disabled:disabled,
+.sc-button.sc-button-play:disabled,
+.sc-button.sc-button-play:disabled:hover {
+    background-color: var(--accent);
+}
+/* Context Texts (All, Popular Tracks...) */
+.sc-classic .g-tabs-link.active {
+    border-color: var(--accent);
+    color: var(--accent);
+}
+/* Active Play Button */
+.sc-button-next.sc-button-focus,
+.sc-button-next:focus,
+.sc-button-next:hover,
+.sc-button-pause.sc-button-focus,
+.sc-button-pause:focus,
+.sc-button-pause:hover,
+.sc-button-play.sc-button-focus,
+.sc-button-play:focus,
+.sc-button-play:hover,
+.sc-button-prev.sc-button-focus,
+.sc-button-prev:focus,
+.sc-button-prev:hover {
+    background-color: var(--darker-accent);
+}
+/* Progress Bar Circle */
+.sc-classic .playbackTimeline__progressHandle {
+    border-color: var(--accent);
+    background-color: var(--accent);
+}
+/* Progress Bar */
+.sc-classic .playbackTimeline__progressBar {
+    background-color: var(--accent);
+}
+/* Progress Bar Time */
+.sc-classic .playbackTimeline__timePassed {
+    color: var(--accent);
+}
+/* Search Results Menu */
+.sc-classic .g-nav-item.active > .g-nav-link {
+    background-color: var(--accent);
+    text-shadow: var(--darker-accent) 0px 1px 0px;
+}
+/*Biggest Play Button */
+.sc-classic .playButton.m-stretch,
+.sc-classic .playButton.m-stretch:active,
+.sc-classic .playButton.m-stretch:focus {
+    border-color: var(--darker-accent);
+    background-color: var(--accent);
+}
+.sc-classic .playButton.m-stretch:hover {
+    border-color: var(--darker-accent);
+    background-color: var(--darker-accent);
+}
+/* Wave Color */
+/*.waveform__layer, .waveform__layer .sceneLayer {filter: grayscale(35%);}*/
+.sceneLayer,
+.heroPlayButton,
+.waveformCommentsNode {
+    filter: hue-rotate(350deg) saturate(65%) brightness(77%);
+}
+
+.sc-button-cta,
+.sc-button-cta:focus,
+.sc-button-cta:hover,
+.sc-button-cta:visited,
+.sc-button.sc-button-white:focus,
+.sc-button.sc-button-white:hover {
+    background-color: var(--darker-accent);
+    border-color: var(--darker-accent);
+    color: var(--text);
+}
+/* Following, Repost, Like Active Buttons */
+.sc-button-active,
+.sc-button-selected {
+    color: var(--darker-accent);
+}
+/* Text Song Title */
+a.sc-link-dark,
+a:hover {
+    color:  var(--text);
+}
+/* Text Song Subtitle */
+a.sc-link-light,
+.sc-text-light {
+    color: var(--darker-text);
+}
+/* Comment Section Text */
+body {
+    color:  var(--text);
+    /*background-color: var(--base);*/
+}
+/* Song Tag Text */
+.sc-tag,
+.sc-tag:visited {
+    color:  var(--text);
+}
+/* Very LightText */
+.sc-text-verylight {
+    color: var(--accent);
+}
+/* Link Text */
+a,
+a:visited {
+    color: var(--accent);
+}
+/* Reply Text */
+.sc-button,
+.sc-button:hover {
+    color:  var(--text);
+}
+/* Song Cpyright Text */
+.sc-type-light {
+    color: var(--darker-text);
+}
+/* Mini-Stats Text */
+a.sc-ministats,
+sc-ministats,
+sc-ministats:hover {
+    color: var(--darker-text);
+}
